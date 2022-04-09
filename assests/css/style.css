@@ -1,0 +1,143 @@
+/*
+    ------------------
+    Template Name: Gyan - Education HTML Template
+    Author: Themesitem
+    Author Email: themesitem@gmail.com
+    Template Designer:Md Sahab uddin
+
+    table of content
+    -------------
+    0.common css
+    1.header
+    2.nav
+    3.Banner
+    4.About
+    5.Course
+    6.Events
+    7.Testimonial & FAQ
+    8.Teachers
+    9.Blogs
+    10.contact info
+    11.links
+ */
+/* Common CSS Start */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    font-family: 'Arimo', sans-serif;
+}
+ul,ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,span,small,
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --nav-color:#fbaa33;
+}
+:root{
+    --primary-color: #ffca36;
+    --secondary-color:#353535;
+    --white-color:#fff;
+    
+ }
+
+/* Common CSS end */
+
+/* top header start */
+#top_header {
+    background: var(--primary-color);
+    font-size: 14px;
+}
+
+#top_header .top_leftHeader p{
+    font-size: 14px;
+    color:var(--secondary-color)
+}
+#top_header .top_midHeader{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 10px;
+    /* clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%); */
+    transform: skew(-30deg);
+ }
+ #top_header .top_rightHeader ul li a{
+
+ }
+
+ #top_header .top_rightHeader ul li a i{
+    display: block;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    color: var(--secondary-color);
+    padding: 0 15px;
+    text-align: center;
+    
+ }
+
+/* top header end */
+
+/* service section start */
+#service{
+ padding: 100px 0;   
+}
+#service .service_item .service_img{
+    border: 1px solid var(--secondary-color);
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 0 auto 70px;
+    transform: rotate(45deg);
+}
+#service .service_item .service_img img{
+    transform: rotate(-45deg);
+}
+#service .service_item .service_content{
+    border: 1px solid var(--secondary-color);
+    padding: 20px 15px;
+    text-align: center;  
+    position: relative;
+}
+#service .service_item .service_content::before{
+    content: '';
+    position: absolute;
+    border: 2px dashed var(--secondary-color);
+    height: 44px;
+    bottom: 100%;
+    left: calc(50%-5px);
+}
+#service .service_item:hover .service_img,
+#service .service_item:hover .service_content,
+#service .service_item:hover .service_content::before{
+    border-color: var(--primary-color);
+}
+/* service section end */
+
+
+
